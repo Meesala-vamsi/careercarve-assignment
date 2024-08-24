@@ -1,0 +1,18 @@
+.home-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.left-home-container{
+  font-size: 30px;
+}
+
+.left-home-container button{
+  background-color: aqua;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}

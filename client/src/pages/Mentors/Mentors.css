@@ -1,0 +1,48 @@
+.mentors-container{
+  padding: 10px 30px;
+}
+
+.mentors-container .mentors-list-container{
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.mentors-list-container .mentors-list-items{
+  box-shadow: 0px 0px 5px 1px hsl(0, 0%, 50%);
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.mentors-list-items .mentor-profile-container{
+  display: flex;
+  justify-content: center;
+}
+
+.mentors-list-items .mentor-profile{
+  height: 60px;
+  width: 60px;
+  border-radius: 40px;
+}
+.ratings-container{
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.booking-container .book-button{
+  background-color: rgb(28, 142, 168);
+  color: #fff;
+  padding: 5px 10px;
+  border: 0px;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none;
+}
+
+.booking-container{
+  display: flex;
+  justify-content: space-between;
+}

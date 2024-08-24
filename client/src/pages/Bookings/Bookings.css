@@ -1,0 +1,57 @@
+.bookings-container{
+  padding: 10px 15px;
+}
+
+.bookings-container .bookings-list-container{
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.booking-profile-container{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.bookings-list-container .booking-list-items{
+  padding: 10px 15px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0px 0px 5px 1px hsl(0, 0%, 50%);
+}
+
+.booking-list-items .booking-profile{
+  height: 60px;
+  width: 60px;
+  border-radius: 35px;
+}
+.expertise-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 0px;
+  list-style: none;
+  margin-bottom: 2px;
+}
+.expertise-container .expertise-item{
+  box-shadow: 0px 0px 5px 1px hsl(0, 0%, 70%);
+  border-radius: 5px;
+  padding: 5px 8px;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.time-container{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+.container1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

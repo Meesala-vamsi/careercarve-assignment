@@ -1,0 +1,48 @@
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 35px;
+  background-color: antiquewhite;
+}
+
+.navbar-container .nav-logo{
+  height: 60px;
+  width: 190px;
+}
+
+.navbar-container .nav-list-container{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-list-container li{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.nav-link{
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-container .nav-left{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-left .profile-image{
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+}
+
+.nav-left .logout-btn{
+  padding: 5px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
