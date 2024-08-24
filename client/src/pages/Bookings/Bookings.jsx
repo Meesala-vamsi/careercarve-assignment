@@ -53,8 +53,7 @@ const Bookings = ()=>{
                 <p>Starts At: {format(new Date(eachBooking.startTime), 'hh:mm a')}</p>
                 <p>Meeting: {eachBooking.status}</p>
                 <ul className="expertise-container">
-                  {
-                    eachBooking.mentor.areaOfExpertise.map((eachArea,index)=>(
+                  { eachBooking.mentor.areaOfExpertise && eachBooking.mentor.areaOfExpertise.map((eachArea,index)=>(
                       <li className="expertise-item" key={index}>{eachArea}</li>
                     ))
                   }
