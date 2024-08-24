@@ -4,6 +4,7 @@ import { IoSearch } from "react-icons/io5";
 import { ReactContext } from "../../ReactContext/Context";
 import axios from "axios";
 import { toast } from "react-toastify";
+import cookies from "js-cookie"
 
 const Search = ()=>{
   const [searchText,setSearchText] = useState("")
@@ -12,7 +13,7 @@ const Search = ()=>{
     const getData = async()=>{
       await axios.get(`${url}/getMentorBySearch?search=${searchText}`,{
         headers:{
-          Authorization:`Bearer ${token}`
+          Authorization:`Bearer ${cookies.get("token")}`
         }
       })
       .then((response)=>{

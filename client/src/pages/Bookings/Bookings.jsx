@@ -6,6 +6,7 @@ import axios from "axios"
 import { FaStar } from "react-icons/fa6"
 import { CiStar } from "react-icons/ci"
 import {format} from "date-fns"
+import cookies from "js-cookie"
 
 const Bookings = ()=>{
   const {url,token} = useContext(ReactContext)
@@ -15,7 +16,7 @@ const Bookings = ()=>{
     const getBookings = async()=>{
       await axios.get(`${url}/bookings/${userData.user._id}`,{
         headers:{
-          Authorization:`Bearer ${token}`
+          Authorization:`Bearer ${cookies.get("token")}`
         }
       })
       .then((response)=>{

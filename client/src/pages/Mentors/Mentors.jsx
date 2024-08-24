@@ -6,6 +6,7 @@ import { FaStar } from "react-icons/fa6";
 import { CiStar } from "react-icons/ci";
 import axios from "axios";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import cookies from "js-cookie"
 import { toast } from "react-toastify";
 
 const Mentors = () => {
@@ -21,7 +22,7 @@ const Mentors = () => {
       await axios
         .get(`${url}/mentors`, {
           headers: {
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${cookies.get("token")}`,
           },
         })
         .then((response) => {
